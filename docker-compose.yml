@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  flaskr:
+    restart: always
+    build: ./flaskr
+    depends_on:
+      - postgres
